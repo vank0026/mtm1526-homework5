@@ -4,18 +4,30 @@ $(document).ready(function() {
 	*/
 	
 	$(".ajax-in1").on("click", function (ev) {
-	$(".fill-me").load("ajax-in1.html");	// ajax files are relative to the html file and not the js file
+	$(".fill-me").hide();
+	$(".fill-me").load("ajax-in1.html", function(){
+            $(this).fadeIn(300);	
+		});
 	});
 	
 	$(".ajax-in2").on("click", function (ev) {
-	$(".fill-me").load("ajax-in2.html");	// ajax files are relative to the html file and not the js file
+	$(".fill-me").hide();
+	$(".fill-me").load("ajax-in2.html", function(){
+            $(this).fadeIn(300);	
+			});
 	});
 	
 	$(".ajax-in3").on("click", function (ev) {
-	$(".fill-me").load("ajax-in3.html");	// ajax files are relative to the html file and not the js file
+	$(".fill-me").hide();
+	$(".fill-me").load("ajax-in3.html", function(){
+            $(this).fadeIn(300);
+		});
 	});
 	
 	$(".ajax-in4").on("click", function (ev) {
-	$(".fill-me").load("ajax-in4.html");	// ajax files are relative to the html file and not the js file
+	$(".fill-me").hide();
+	$(".fill-me").load("ajax-in4.html", function(){
+            $(this).fadeIn(300);	
+			});
 	});
 });
